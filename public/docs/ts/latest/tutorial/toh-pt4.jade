@@ -201,7 +201,7 @@ a#child-component
 
    You might be tempted to call the `getHeroes()` method in a constructor, but
   a constructor should not contain complex logic,
-  especially a constructor that calls a server, such as as a data access method.
+  especially a constructor that calls a server, such as a data access method.
   The constructor is for simple initializations, like wiring constructor parameters to properties.
 
   To have Angular call `getHeroes()`, you can implement the Angular *ngOnInit lifecycle hook*.
@@ -240,8 +240,8 @@ code-example(format="nocode").
   additionally, you aren't able to block the UI during the wait.
 
 :marked
-  To coordinate the view with the response, 
-  you can use *Promises*, which is an asynchronous 
+  To coordinate the view with the response,
+  you can use *Promises*, which is an asynchronous
   technique that changes the signature of the `getHeroes()` method.
 
   ### The hero service makes a Promise
